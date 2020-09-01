@@ -39,6 +39,11 @@ class Rest(object):
         try:
           logging.Info(f"Making the post request with {url} with the provided data {kwargs}")
           request = requests.post(url=url, headers=headers, data=kwargs)
+          if request.text is not u'':
+            return request.json()
+          else:
+            
+        return request.text
           return request.response()
         except HTTPError as http_err:
             logging.error(f'HTTP error occurred: {http_err}')
