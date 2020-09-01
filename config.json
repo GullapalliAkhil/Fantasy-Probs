@@ -1,0 +1,12 @@
+//List of api's we need to hit
+"cric_stat_site" : {
+    "ESPN":{
+
+    },
+    "Cricbuzz":{
+
+    },
+    "CricInfo":{
+        
+    }
+}
